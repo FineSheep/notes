@@ -2,7 +2,7 @@
 
 > 事例:把书放在书架上,依次显示
 
-![iterator.drawio](D:/图/3150/iterator.drawio.png)
+![iterator.drawio](D:/notes/3150/iterator.drawio.png)
 
 > 类、接口一览表
 

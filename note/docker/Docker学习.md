@@ -75,7 +75,7 @@ systemctl enable docker
 
 7. docker version查看
 
-![image-20220930164956847](D:/图/3150/image-20220930164956847.png)
+![image-20220930164956847](D:/notes/3150/image-20220930164956847.png)
 
 8. 配置阿里云镜像加速
 
@@ -571,7 +571,7 @@ docker run -it --name container02 --volumes from container01 镜像名/id  # 将
 3. #表示注释
 4. 每一个指令都会创建一个新的镜像层,并提交
 
-![image-20221001085508372](D:/图/3150/image-20221001085508372.png)
+![image-20221001085508372](D:/notes/3150/image-20221001085508372.png)
 
 ### DockerFile指令
 
@@ -590,7 +590,7 @@ COPY			# 类似ADD,将文件拷贝到镜像中
 ENV				#构建的时候设置环境变量
 ```
 
-![image-20221001085649009](D:/图/3150/image-20221001085649009.png)
+![image-20221001085649009](D:/notes/3150/image-20221001085649009.png)
 
 
 

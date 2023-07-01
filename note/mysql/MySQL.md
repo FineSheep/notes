@@ -2,7 +2,7 @@
 
 > [MySQL 速成课程 - Ben Forta（本·福塔）](https://forta.com/books/0672327120/)
 
-![image-20221227113128225](D:/图/3150/image-20221227113128225.png)
+![image-20221227113128225](D:/notes/3150/image-20221227113128225.png)
 
 # 数据库概述
 
@@ -152,7 +152,7 @@ mysql> show tables;
 >
 >  DESCRIBE TABLE;
 
-![image-20221226104623710](D:/图/3150/image-20221226104623710.png)
+![image-20221226104623710](D:/notes/3150/image-20221226104623710.png)
 
 > MySQL支持用DESCRIBE作为SHOW COLUMNS FROM的一种快捷方式。换句话说，DESCRIBE user;是SHOW COLUMNS FROM user;的一种快捷方式。
 
@@ -908,7 +908,7 @@ mysql> select cust_name,cust_contact from customers where Soundex(cust_contact) 
 
 ​		首先需要注意的是MySQL使用的日期格式。无论你什么时候指定一个日期，不管是插入或更新表值还是用WHERE子句进行过滤，日期必须为格式yyyy-mm-dd。
 
-![image-20221226164325820](D:/图/3150/image-20221226164325820.png)
+![image-20221226164325820](D:/notes/3150/image-20221226164325820.png)
 
 > :warning:对于具有时间值00:00:00的日期，比较的时候应使用Date（）函数提取日期部分比较。
 >
@@ -931,11 +931,11 @@ mysql> select cust_id,order_num,order_date from orders where Date(order_date) = 
 
 ## 数值处理函数
 
-![image-20221226165350957](D:/图/3150/image-20221226165350957.png)
+![image-20221226165350957](D:/notes/3150/image-20221226165350957.png)
 
 ## 聚集函数
 
-![image-20221226170031942](D:/图/3150/image-20221226170031942.png)
+![image-20221226170031942](D:/notes/3150/image-20221226170031942.png)
 
 - avg(),max(),min(),sum()函数忽略列值为NULL的行。
 - 如果指定列名，则指定列的值为空的行被COUNT()函数忽略，但如果COUNT()函数中用的是星号（*），则不忽略。
@@ -1233,7 +1233,7 @@ WHERE子句作为过滤条件，它只包含那些匹配给定条件（这里是
 
 集合的乘积
 
-![image-20221227105429854](D:/图/3150/image-20221227105429854.png)
+![image-20221227105429854](D:/notes/3150/image-20221227105429854.png)
 
 对于最终的结果应该是3*3 =9 种组合
 
@@ -1754,7 +1754,7 @@ mysql>  select vend_id ,prod_id,prod_price
 >
 > 样例表（productnotes表）使用MyISAM。
 
-![image-20221227145604245](D:/图/3150/image-20221227145604245.png)
+![image-20221227145604245](D:/notes/3150/image-20221227145604245.png)
 
 like和正则的限制
 
@@ -1766,7 +1766,7 @@ like和正则的限制
 
 一般在创建表时启用全文本搜索。CREATE TABLE语句接受FULLTEXT子句，它给出被索引列的一个逗号分隔的列表。
 
-![image-20221227150024080](D:/图/3150/image-20221227150024080.png)
+![image-20221227150024080](D:/notes/3150/image-20221227150024080.png)
 
 ## 使用
 
@@ -1795,7 +1795,7 @@ mysql> select note_text from productnotes where match(note_text) against('rabbit
 
 > 贴代码不美观。。。。。。。。。。。。。。贴图
 
-![image-20221227151801706](D:/图/3150/image-20221227151801706.png)
+![image-20221227151801706](D:/notes/3150/image-20221227151801706.png)
 
 > 这里，在SELECT而不是WHERE子句中使用Match()和Against()。这使所有行都被返回（因为没有WHERE子句）。Match()和Against()用来建立一个计算列（别名为rank），此列包含全文本搜索计算出的等级值。等级由MySQL根据行中词的数目、唯一词的数目、整个索引中词的总数以及包含该词的行的数目计算出来。正如所见，不包含词rabbit的行等级为0（因此不被前一例子中的WHERE子句选择）。确实包含词rabbit的两个行每行都有一个等级值，文本中词靠前的行的等级值比词靠后的行的等级值高。
 
@@ -1813,7 +1813,7 @@ mysql> select note_text from productnotes where match(note_text) against('rabbit
 select note_text from productnotes where match(note_text) against('anvils' with query expansion);
 ```
 
-![image-20221227152418077](D:/图/3150/image-20221227152418077.png)
+![image-20221227152418077](D:/notes/3150/image-20221227152418077.png)
 
 > 这次返回了7行。第一行包含词anvils，因此等级最高。第二行与anvils无关，但因为它包含第一行中的两个词（customer和recommend），所以也被检索出来。第3行也包含这两个相同的词，但它们在文本中的位置更靠后且分开得更远，因此也包含这一行，但等级为第三。第三行确实也没有涉及anvils（按它们的产品名）。
 
@@ -1839,11 +1839,11 @@ mysql> select note_text from productnotes where match(note_text) against('heavy'
 mysql> select note_text from productnotes where match(note_text) against('heavy -rope*' in boolean mode);
 ```
 
-![image-20221227153120616](D:/图/3150/image-20221227153120616.png)
+![image-20221227153120616](D:/notes/3150/image-20221227153120616.png)
 
 使用案例：
 
-![image-20221227153343596](D:/图/3150/image-20221227153343596.png)
+![image-20221227153343596](D:/notes/3150/image-20221227153343596.png)
 
 ## 使用说明
 
@@ -2040,7 +2040,7 @@ mysql>
 
 工具中查看：
 
-![image-20221228090413477](D:/图/3150/image-20221228090413477.png)
+![image-20221228090413477](D:/notes/3150/image-20221228090413477.png)
 
 ```mysql
 mysql> select * from productcustomers;
@@ -2388,7 +2388,7 @@ create trigger neworder after insert on orders for each row select  select NEW.o
 >
 > ps:Oracle 可通过**:NEW** 和**:OLD**获取到新值和旧值
 
-![image-20221228114708052](D:/图/3150/image-20221228114708052.png)
+![image-20221228114708052](D:/notes/3150/image-20221228114708052.png)
 
 # 事务管理
 
@@ -2523,4 +2523,4 @@ UPDATE
 
 # 进阶
 
-![](D:/图/3150/MySQL.png)
+![](D:/notes/3150/MySQL.png)

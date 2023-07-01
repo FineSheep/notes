@@ -212,4 +212,3 @@ void ObjectMonitor::notify(TRAPS) {
 	...
 }
 ```
-

@@ -2069,4 +2069,3 @@ c()							// 输出c
 import x from '/1.js'
 console.log(x)				// 输出20
 ```
-

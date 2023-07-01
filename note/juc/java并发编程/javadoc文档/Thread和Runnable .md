@@ -93,4 +93,3 @@ In addition, Runnable provides the means for a class to be active while not subc
 This method should only be called by a thread that is the owner of this object's monitor. See the notify method for a description of the ways in which a thread can become the owner of a monitor.
 此方法只能由作为此对象监视器所有者的线程调用。有关线程成为监视器所有者的方式的描述，请参见notify方法。
 ```
-

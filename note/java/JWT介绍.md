@@ -74,11 +74,11 @@
 
 > 登录
 
-![登录-第 1 页.drawio](D:/图/3150/%E7%99%BB%E5%BD%95-%E7%AC%AC%201%20%E9%A1%B5.drawio.png)
+![登录-第 1 页.drawio](D:/notes/3150/%E7%99%BB%E5%BD%95-%E7%AC%AC%201%20%E9%A1%B5.drawio.png)
 
 > 续约
 
-![登录-第 2 页.drawio](D:/图/3150/%E7%99%BB%E5%BD%95-%E7%AC%AC%202%20%E9%A1%B5.drawio.png)
+![登录-第 2 页.drawio](D:/notes/3150/%E7%99%BB%E5%BD%95-%E7%AC%AC%202%20%E9%A1%B5.drawio.png)
 
 ### 实现
 
@@ -237,10 +237,10 @@ public class UserController {
 
 > 登录
 
-![image-20221204182137386](D:/图/3150/image-20221204182137386.png)
+![image-20221204182137386](D:/notes/3150/image-20221204182137386.png)
 
 > 续约：疯狂点:sunglasses:
 
-![image-20221204182221250](D:/图/3150/image-20221204182221250.png)
+![image-20221204182221250](D:/notes/3150/image-20221204182221250.png)
 
-![image-20221204182234054](D:/图/3150/image-20221204182234054.png)
+![image-20221204182234054](D:/notes/3150/image-20221204182234054.png)

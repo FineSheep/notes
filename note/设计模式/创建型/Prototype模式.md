@@ -32,7 +32,7 @@
 
 > 类图
 
-![](D:/图/3150/prototype.drawio.png)
+![](D:/notes/3150/prototype.drawio.png)
 
 ## 代码清单
 

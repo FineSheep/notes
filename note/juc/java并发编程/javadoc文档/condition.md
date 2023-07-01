@@ -285,4 +285,3 @@ Implementation Considerations
 An implementation may (and typically does) require that the current thread hold the lock associated with this Condition when this method is called. Implementations must document this precondition and any actions taken if the lock is not held. Typically, an exception such as IllegalMonitorStateException will be thrown.
 当调用此方法时，实现可能（并且通常需要）要求当前线程持有与此条件相关联的锁。实现必须记录此前提条件以及在未持有锁的情况下所采取的任何操作。通常，将引发一个异常，如IllegalMonitorStateException。 
 ```
-
