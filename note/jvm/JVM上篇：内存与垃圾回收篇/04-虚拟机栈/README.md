@@ -383,7 +383,21 @@ Java 中任何一个普通的方法其实都具备虚函数的特征，它们相
 在类加载的解析阶段就可以进行解析，如下是非虚方法举例：
 
 ```java
-class Father{    public static void print(String str){        System. out. println("father "+str);     }    private void show(String str){        System. out. println("father"+str);    }}class Son extends Father{    public class VirtualMethodTest{        public static void main(String[] args){            Son.print("coder");            //Father fa=new Father();            //fa.show("atguigu.com");        }    }
+class Father{    
+    public static void print(String str){        
+        System. out. println("father "+str);     
+    }    
+    private void show(String str){        
+        System. out. println("father"+str);    
+    }
+}
+class Son extends Father{    
+    public class VirtualMethodTest{       
+        public static void main(String[] args){           							 Son.print("coder");            
+             //Father fa=new Father(); 
+            //fa.show("atguigu.com");       
+        }    
+    }
 ```
 
 虚拟机中提供了以下几条方法调用指令：
@@ -445,7 +459,40 @@ class Father{    public static void print(String str){        System. out. print
 举例 2：
 
 ```java
-interface Friendly{    void sayHello();    void sayGoodbye(); }class Dog{    public void sayHello(){    }    public String tostring(){        return "Dog";    }}class Cat implements Friendly {    public void eat() {    }    public void sayHello() {     }     public void sayGoodbye() {    }    protected void finalize() {    }}class CockerSpaniel extends Dog implements Friendly{    public void sayHello() {         super.sayHello();    }    public void sayGoodbye() {    }}
+interface Friendly
+{
+    void sayHello();
+    void sayGoodbye();
+}
+class Dog
+{
+    public void sayHello()
+    {}
+    public String tostring()
+    {
+        return "Dog";
+    }
+}
+class Cat implements Friendly
+{
+    public void eat()
+    {}
+    public void sayHello()
+    {}
+    public void sayGoodbye()
+    {}
+    protected void finalize()
+    {}
+}
+class CockerSpaniel extends Dog implements Friendly
+{
+    public void sayHello()
+    {
+        super.sayHello();
+    }
+    public void sayGoodbye()
+    {}
+}
 ```
 
 ![image-20210509203351535](https://img-blog.csdnimg.cn/img_convert/2264627eaca3c5385a75101478565f5b.png)

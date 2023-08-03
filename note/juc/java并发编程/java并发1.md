@@ -424,12 +424,6 @@ class TwoParseTermination{
 3. `BLOCKED` ， `WAITING` ， `TIMED_WAITING` 都是 Java API 层面对【阻塞状态】的细分，后面会在状态转换一节
    详述
 
-
-
-
-
-
-
 # 线程问题
 
 ## 4.1 线程出现问题的根本原因分析
