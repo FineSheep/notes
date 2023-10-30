@@ -153,7 +153,7 @@ def function(a=a, b=b):
     | ab+ | 以二进制格式打开一个文件用于读写。如果该文件已存在，文件指针将会放在文件的结尾。如果该文件不存在，创建新文件用于读写。 |
 2. 关闭
 3. 读写
-    
+   
     1. 写：如果文件不存在，那么创建；如果存在那么就先清空，然后写入数据
 4. 序列化/反序列化
     1. 概念：通过文件操作，我们可以将字符串写入到一个本地文件。但是，如果是一个对象(例如列表、字典、元组等)，就无法直接写入到一个文件里，需要对这个对象进行序列化，然后才能写入到文件里。设计一套协议，按照某种规则，把内存中的数据转换为字节序列，保存到文件，这就是序列化（对象→字节序列）。反之，从文件的字节序列恢复到内存中，就是反序列化（字节序列→对象）。
@@ -236,9 +236,9 @@ result = json.load(file)  # 传入一个文件对象，用来将一个文件对�
            3. 高匿名代理：使用后对方服务器不知道你使用了代理，更不知道你的真实IP。
 
    6. 验证码访问
-      
+   
 1. 提供商：打码平台、云打码平台、超级鹰
-      
+   
 7. 动态加载网页：网站返回的是js数据 并不是网页的真实数据
    
    可以通过selenium驱动真实的浏览器发送请求
@@ -453,13 +453,13 @@ result = json.load(file)  # 传入一个文件对象，用来将一个文件对�
         1. //div[@id]：查找所有有id属性的div标签
         2. //div[@id="maincontent"]：查找id属性为maincontent的div标签
     3. 属性查询
-        
+       
         1. //@class：获取class的属性值
     4. 模糊查询
         1. //div[contains(@id, "he")]：id属性值包含he的div标签
         2. //div[starts‐with(@id, "he")]：id属性值以he开头的div标签
     5. 内容查询
-        
+       
         1. //div/h1/text()：获取`<h1>内容</h1>`中的内容
     6. 逻辑运算
         1. //div[@id="head" and @class="s_down"]
@@ -1127,9 +1127,9 @@ if __name__ == '__main__':
    
     参见贴子附图
     
-    ![FoGlxFInGgVEYKfbdjF8OR1DnxOv](D:\图\typora\Python爬虫入门 \FoGlxFInGgVEYKfbdjF8OR1DnxOv.png)
+    ![FoGlxFInGgVEYKfbdjF8OR1DnxOv](D:\NOTES\typora\Python爬虫入门 \FoGlxFInGgVEYKfbdjF8OR1DnxOv.png)
 
-![FvPvakftQO-UCKkrrHf2vcX_fawg](D:\图\typora\Python爬虫入门 \FvPvakftQO-UCKkrrHf2vcX_fawg.png)
+![FvPvakftQO-UCKkrrHf2vcX_fawg](D:\notes\typora\Python爬虫入门 \FvPvakftQO-UCKkrrHf2vcX_fawg.png)
 
 ## （二）基本使用
 

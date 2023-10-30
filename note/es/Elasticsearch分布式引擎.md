@@ -1495,7 +1495,7 @@ void matchAll() {
 }
 ```
 
-![image-20230428153152691](D:\图\typora\Elasticsearch分布式引擎\image-20230428153152691.png)
+![image-20230428153152691](D:\notes\typora\Elasticsearch分布式引擎\image-20230428153152691.png)
 
 #### 单字匹配查询
 
@@ -1517,7 +1517,7 @@ void word() {
 }
 ```
 
-![image-20230428153721251](D:\图\typora\Elasticsearch分布式引擎\image-20230428153721251.png)
+![image-20230428153721251](D:\notes\typora\Elasticsearch分布式引擎\image-20230428153721251.png)
 
 #### 排序
 
@@ -1585,4 +1585,6 @@ void heigh() {
 }
 ```
 
-## 聚合
+## 自动补全
+
+## 同步
