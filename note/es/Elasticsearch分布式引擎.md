@@ -1549,7 +1549,7 @@ void weight() {
 }
 ```
 
-![image-20230428155257685](D:\图\typora\Elasticsearch分布式引擎\image-20230428155257685.png)
+![image-20230428155257685](D:\notes\typora\Elasticsearch分布式引擎\image-20230428155257685.png)
 
 #### 高亮
 
